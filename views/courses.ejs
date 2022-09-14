@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>home</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>UVS NODEJS COURSES</h1>
+        <div class="link">
+            <button class="btn btn-primary"><a href="/" class="text-white">home</a></button>
+            <button class="btn btn-primary"><a href="/courses" class="text-white">courses</a></button>
+            <button class="btn btn-primary"><a href="/contact" class="text-white">contact</a></button>
+
+        </div>
+    </div>
+        <div class="app_body">
+            <div class="img">
+            <img src="/img/node-js.png" alt="">
+            </div>
+            <div class="text">
+                <h2>Learn to create web <br> apps (using JS <br> technologies)</h2><br><br>
+                <p>Offered Courses:</p>
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">cours</th>
+                        <th scope="col">prix</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <% madonnees.forEach((madonnee)=> {%>
+
+                        <td scope="row"><%=  madonnee.name%></td>
+                        <td><%=  madonnee.prix%></td>
+                      </tr>
+                      <%}) %>   
+
+                    </tbody>
+                  </table>
+                       
+
+            </div>
+        </div>
+    <div class="app_footer">
+        <span class="text-primary">Contact Us</span><span> today!</span>
+    </div>
+</body>

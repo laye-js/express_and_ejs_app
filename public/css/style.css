@@ -1,0 +1,55 @@
+
+.nav{
+    margin-top: 5vh;
+    display: grid;
+place-items: center;
+border-bottom: 1em solid blue;
+
+}
+.link{
+
+padding: 20px;
+}
+a:hover{
+    text-decoration: none;
+}
+.app_body{
+    display: flex;
+    color: rgb(112,100,92);
+}
+.img{
+    width: 35vw;
+    height: 40vh;
+    border: 1px solid black;
+    margin-left:15vw ;
+    margin-top: 7vh;
+}
+.img>img{
+    width: 100%;
+    height: 40vh;
+    
+
+    
+
+}
+.text{
+    margin-top: 12vh;
+    margin-left: 3vw;
+}
+p{
+    font-size: 36px;
+    border-bottom:2px solid black ;
+    width: fit-content;
+}
+li{
+    font-size: 18px;
+
+
+}
+.app_footer{
+    margin-left: 50vw;
+}
+h1{
+    color: rgb(112,100,92);
+
+}
